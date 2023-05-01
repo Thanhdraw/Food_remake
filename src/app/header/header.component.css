@@ -1,0 +1,75 @@
+
+#main{
+
+}
+/* Begin: header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: var(--backgroud-color);
+    height: 55px;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    
+}
+.header .header-info{
+    list-style-type: none;
+    display: flex;
+}
+.header .Gourmet-au-Catering {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+    line-height: 22.5px;
+    font-size: 15px;
+    padding: 8px 16px;
+    
+}
+
+.header .header-info li:hover a,
+.header .Gourmet-au-Catering:hover{
+    background-color: #ccc;
+}
+.header .header-info li a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 8px 16px;
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 4px;
+}
+/* slider */
+
+#slider{
+    position: relative;
+    max-width: 1600px;
+    height: 542px;
+    background-color: #ccc;
+    background-image: url(https://i.pinimg.com/564x/14/e2/4f/14e24f745fba4337d5bd86636754865a.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    object-fit: center;
+    border-radius: 20px;
+}
+#slider .catering{
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    padding: 12px 24px;
+    letter-spacing: 5px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.75);
+    color: #fff;
+    font-size:7rem;
+    opacity: 0.9;
+    background-image: repeating-linear-gradient(180deg, #3d3d3d 0%, #3d3d3d 40%, #f1b05c 50%, #3d3d3d 60%, #3d3d3d 100%);
+    animation: slidingGradient 3s linear infinite;
+}

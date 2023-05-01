@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let foodes of foodes">
+    <!-- <button [class.selected]="foodes === selectedFood" type="button" (click)="onSelect(foodes)">
+      <span class="badge">{{foodes.id}}</span>
+      <span class="name">{{foodes.name}}</span>
+      <img src="{{foodes.img}}" alt="">
+      <span class="badge">{{foodes.des}}</span>
+    </button> -->
+   <a routerLink="/home/{{foodes.id}}">
+      <span class="badge">{{foodes.id}}</span> {{foodes.name}}
+    </a>
+</ul>
+<!-- <app-home-details [food]="selectedFood"></app-home-details> -->
