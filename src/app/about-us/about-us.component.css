@@ -1,0 +1,55 @@
+section{
+    padding: 32px 16px;
+    background-color: #fff;
+    text-align: center;
+    display:flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h3{
+    margin: 10px 0;
+    letter-spacing: 5px;
+}
+section p{
+
+    margin: auto;
+    word-break:break-all;
+    margin: 15px;
+    margin-left: 30px;
+}   
+section img{
+    width: 700px;
+}
+section .section-text{
+    flex:1;
+}
+/* ------------------------------ */
+
+.section{
+    padding: 32px 16px;
+    background-color: #fff;
+    text-align: center;
+    display:flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h3{
+    margin: 10px 0;
+    letter-spacing: 5px;
+}
+.section p{
+
+    margin: auto;
+    word-break:break-all;
+    margin: 15px;
+    margin-right: 30px;
+}   
+.section img{
+    width: 700px;
+}
+.section .section-text{
+    flex:1;
+}

@@ -1,0 +1,43 @@
+/* HeroDetailComponent's private CSS styles */
+label {
+    color: #435960;
+    font-weight: bold;
+  }
+  input {
+    font-size: 1em;
+    padding: .5rem;
+  }
+  button {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+
+  /* CSS BY THANHDANG  */
+.food-item{
+  display: flex;
+  /* margin: 30px 0; */
+  width: 700px;
+  height: 500px;
+  margin: 30px auto;
+  color: #000;
+}
+.food-item img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.text-item{
+  margin-left: 30px;
+  font-size: 1.2rem;
+}

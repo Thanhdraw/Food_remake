@@ -1,8 +1,13 @@
-<div *ngIf="food">
-    <h2>{{food.name | uppercase}} Details</h2>
-    <div>id: {{food.id}}</div>
-    <div>
-      <label for="food-name">Food name: </label>
-      <input id="food-name" [(ngModel)]="food.name" placeholder="name">
-    </div>
+<div class="food-item" *ngIf="food">
+  <!-- <h2>{{food.name | uppercase}} Details</h2> -->
+  <div class="img-item">
+    <img src="{{food.img}}" alt="">
   </div>
+  <div class="text-item">
+    <div>Mã thực đơn:{{food.id}}</div>
+    <label for="food-name"><b>{{food.name}}</b></label>
+    <p>{{food.des}}</p>
+    <!-- <input id="food-name" [(ngModel)]="food.name" placeholder="name"> -->
+  </div>
+</div>
+<!--  -->

@@ -18,13 +18,11 @@ export class FoodService {
     // For now, assume that a hero with the specified `id` always exists.
     // Error handling will be added in the next step of the tutorial.
     const food = FOODES.find(h => h.id === id)!;
-    // this.messageService.add(`HeroService: fetched hero id=${id}`);
     return of(food);
   }
   constructor(
     private http: HttpClient,
     private messageService: MessageService) { }
-  /** Log a HeroService message with the MessageService */
   private log(message: string) {
     this.messageService.add(`FoodService: ${message}`);
   }

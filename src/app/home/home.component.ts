@@ -10,7 +10,7 @@ import { MessageService } from '../message.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent  implements OnInit   {
-  title = 'Đây là trang chủ'
+  title = 'Đây là trang Menu'
   foodes: Food[] = [];
   selectedFood?: Food;
   onSelect(foodes: Food): void {

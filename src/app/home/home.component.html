@@ -1,5 +1,7 @@
-<h1>{{title}}</h1>
-<h2>My Heroes</h2>
+<div class="heading">
+  <h1>{{title}}</h1>
+  <h2>Menu</h2>
+</div>
 <ul class="heroes">
   <li *ngFor="let foodes of foodes">
     <!-- <button [class.selected]="foodes === selectedFood" type="button" (click)="onSelect(foodes)">
@@ -8,8 +10,12 @@
       <img src="{{foodes.img}}" alt="">
       <span class="badge">{{foodes.des}}</span>
     </button> -->
-   <a routerLink="/home/{{foodes.id}}">
-      <span class="badge">{{foodes.id}}</span> {{foodes.name}}
+    <img routerLink="/home/{{foodes.id}}" src="{{foodes.img}}" alt="">
+    <a>
+      <p class="badge">{{foodes.id}}:</p>
+      <p>{{foodes.name}}</p>
     </a>
+  </li>
 </ul>
+
 <!-- <app-home-details [food]="selectedFood"></app-home-details> -->
