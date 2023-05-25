@@ -29,6 +29,7 @@
     margin: 18px 0;
 
 }
+
 .contact-tel{
     margin: 15px 0;
     font-size: 15px;
@@ -52,3 +53,19 @@
     color: #000;
 
 }
+
+/*  */
+
+/* material */
+table{
+    display: flex;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
