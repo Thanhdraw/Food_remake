@@ -28,6 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Website interface
 
-!["Giao diện"]("https://github.com/Thanhdraw/Food_remake/src/assets/images/cusine.png")
+!["Giao diện"]("https://github.com/Thanhdraw/FOOD_REMAKE/src/assets/images/cusine.png")
 
 !["Food"]("https://github.com/Thanhdraw/Food_remake/src/assets/images/food.png")
