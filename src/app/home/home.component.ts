@@ -7,17 +7,20 @@ import { MessageService } from '../message.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
-export class HomeComponent  implements OnInit   {
-  title = 'Đây là trang Menu'
+export class HomeComponent implements OnInit {
+  title = 'Đây là trang Menu';
   foodes: Food[] = [];
   selectedFood?: Food;
   onSelect(foodes: Food): void {
     this.selectedFood = foodes;
     this.messageService.add(`HeroesComponent: Selected hero id=${foodes.id}`);
   }
-  constructor(private FoodService: FoodService,private messageService: MessageService) {}
+  constructor(
+    private FoodService: FoodService,
+    private messageService: MessageService
+  ) {}
   // getfoodes(): void {
   //   this.foodes = this.FoodService.getHeroes();
   // }
@@ -28,10 +31,8 @@ export class HomeComponent  implements OnInit   {
   //   const foodes = of(this.foodes);
   //   return foodes;
   // }
-  
+
   getfoodes(): void {
-    this.FoodService.getfoodes()
-        .subscribe(foodes => this.foodes = foodes);
+    this.FoodService.getfoodes().subscribe((foodes) => (this.foodes = foodes));
   }
- 
 }

@@ -1,5 +1,5 @@
 <div class="heading">
-  <h1>{{title}}</h1>
+  <h1>{{ title }}</h1>
   <h2>Menu</h2>
 </div>
 <ul class="heroes">
@@ -10,10 +10,10 @@
       <img src="{{foodes.img}}" alt="">
       <span class="badge">{{foodes.des}}</span>
     </button> -->
-    <img routerLink="/home/{{foodes.id}}" src="{{foodes.img}}" alt="">
+    <img routerLink="/home/{{ foodes.id }}" src="{{ foodes.img }}" alt="" />
     <a>
-      <p class="badge">{{foodes.id}}:</p>
-      <p>{{foodes.name}}</p>
+      <p class="badge">{{ foodes.id }}:</p>
+      <p>{{ foodes.name }}</p>
     </a>
   </li>
 </ul>
