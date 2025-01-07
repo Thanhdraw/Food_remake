@@ -1,19 +1,26 @@
-
 <div id="main">
-    <div class="header">
-        <a routerLink="dashboard" class="Gourmet-au-Catering">
-            Vietnamese dishes
-        </a>
-        <ul class="header-info">
-            <li><a routerLink="/about-us">About us</a></li>
-            <li><a routerLink="/home">Menu</a></li>
-            <li><a routerLink="/contact">Contact</a></li>
-            <li><a routerLink="/Info">info</a></li>
-        </ul>
-    </div>
-    <div id="slider">
-        <h1 class="catering">
-            Vietnamese dishes
-        </h1>
-    </div>
+  <div class="header bg-gray-800 p-4 flex justify-between items-center">
+    <a
+      routerLink="dashboard"
+      class="text-white text-xl font-semibold hover:text-yellow-400"
+    >
+      Vietnamese dishes
+    </a>
+    <ul class="header-info flex space-x-6 text-white">
+      <li>
+        <a routerLink="/about-us" class="hover:text-yellow-400">About us</a>
+      </li>
+      <li><a routerLink="/home" class="hover:text-yellow-400">Menu</a></li>
+      <li>
+        <a routerLink="/contact" class="hover:text-yellow-400">Contact</a>
+      </li>
+      <li><a routerLink="/Info" class="hover:text-yellow-400">Info</a></li>
+    </ul>
+  </div>
+  <div
+    id="slider"
+    class="bg-cover bg-center h-96 flex items-center justify-center text-white"
+  >
+    <h1 class="catering text-4xl font-bold">Vietnamese dishes</h1>
+  </div>
 </div>
